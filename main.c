@@ -37,14 +37,5 @@ int main()
   printf("enter b4: ");
   scanf("%d", &b4);
 
-  printf("%d", a1);
-  printf("%d", a2);
-  printf("%d", a3);
-  printf("%d", a4);
-  printf("%d", b1);
-  printf("%d", b2);
-  printf("%d", b3);
-  printf("%d", b4);
-
   return 0;
 }
