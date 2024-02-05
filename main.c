@@ -1,5 +1,18 @@
 #include <stdio.h>
 
+int calculate2x2Matrix(int a1, int a2, int a3, int a4, int b1, int b2, int b3, int b4)
+{
+  int r1c1 = (a1 * b1) + (a2 * b3);
+  int r1c2 = (a1 * b2) + (a2 * b4);
+  int r2c1 = (a3 * b1) + (a4 * b3);
+  int r2c2 = (a3 * b2) + (a4 * b4);
+
+  printf("Row 1, Col 1: %d\n", r1c1);
+  printf("Row 1, Col 2: %d\n", r1c2);
+  printf("Row 2, Col 1: %d\n", r2c1);
+  printf("Row 2, Col 2: %d\n", r2c2);
+}
+
 int main()
 {
   // Matrix solving problem
@@ -36,6 +49,8 @@ int main()
 
   printf("enter b4: ");
   scanf("%d", &b4);
+
+  calculate2x2Matrix(a1, a2, a3, a4, b1, b2, b3, b4);
 
   return 0;
 }
